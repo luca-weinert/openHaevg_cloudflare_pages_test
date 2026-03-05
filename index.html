@@ -1,48 +1,52 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beispiel Seite</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f5f5f5;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            border-radius: 5px;
-        }
-        main {
-            background-color: white;
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 5px;
-        }
-        h1 {
-            margin: 0;
-        }
-    </style>
+    <title>Cloudflare Pages Demo – OpenHÄVG 2026</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        <h1>Willkommen!</h1>
+        <h1>Cloudflare Pages Demo</h1>
+        <p>20. OpenHÄVG – 06. März 2026</p>
     </header>
+
     <main>
-        <h2>Dies ist eine simple Beispiel Seite</h2>
-        <p>Diese Seite wurde mit HTML und CSS erstellt.</p>
-        <ul>
-            <li>Punkt 1</li>
-            <li>Punkt 2</li>
-            <li>Punkt 3</li>
-        </ul>
+        <section>
+            <h2>Willkommen</h2>
+            <p>
+                Herzlich willkommen zum 20. OpenHÄVG! Diese Seite demonstriert den Einsatz von
+                <strong>Cloudflare Pages</strong> als Hosting-Plattform für statische Webseiten.
+                Cloudflare Pages ermöglicht eine schnelle, globale Auslieferung von Inhalten –
+                ohne eigene Serverinfrastruktur.
+            </p>
+        </section>
+
+        <section aria-labelledby="counter-heading">
+            <h2 id="counter-heading">Click Counter</h2>
+            <p>Dieses interaktive Element zählt deine Klicks in Echtzeit.</p>
+            <p>Anzahl der Klicks: <span id="counter" aria-live="polite">0</span></p>
+            <div class="button-group">
+                <button id="btnInc" aria-label="Klicks erhöhen">+</button>
+                <button id="btnDec" aria-label="Klicks verringern">−</button>
+                <button id="btnReset" aria-label="Klicks zurücksetzen">Reset</button>
+            </div>
+        </section>
+
+        <section class="logo-section" aria-label="HÄVG Logo">
+            <img src="Logo.svg" alt="HÄVG-Logo" class="logo">
+        </section>
+
     </main>
 
-    <p>Das ist ein Test</p>
-    <p>Willkommen zur OpenHÄVG</p>
+    <footer>
+        <p>20. OpenHÄVG &middot; 06. März 2026 &middot; Demonstriert mit Cloudflare Pages</p>
+    </footer>
+
+    <script src="index.js"></script>
 </body>
+
 </html>
